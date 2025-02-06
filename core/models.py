@@ -166,7 +166,7 @@ def fourth_model_qrcode(bordered, radius, withID, beginID, poweredBy, qrcode_ima
         font = ImageFont.truetype(str(font_path), 25)
         text = f" {str(beginID)} "
 
-        withID_frame = Image.new(mode="RGB", size=(248 // 3, 48 // 3), color=(255, 255, 255))
+        withID_frame = Image.new(mode="RGB", size=(248 // 2, 48), color=(255, 255, 255))
         draw_text_frame = ImageDraw.Draw(withID_frame)
 
         text_bbox = draw_text_frame.textbbox((0, 0), text, font=font)
