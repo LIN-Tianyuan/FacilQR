@@ -183,8 +183,8 @@ def run_qrcode_generation():
                 withID = True
                 break
             elif withID_input == 'n':
-                withID = True
-                beginID = 0
+                withID = False
+                beginID = "0"
                 break
             else:
                 print(f"{style.RED}Choix invalide, veuillez entrer 'y' pour Oui ou 'n' pour Non.{style.RESET}")
@@ -204,7 +204,7 @@ def run_qrcode_generation():
                 break
             elif withID_input == 'n':
                 withID = False
-                beginID = 0
+                beginID = "0"
                 break
             else:
                 print(f"{style.RED}Choix invalide, veuillez entrer 'y' pour Oui ou 'n' pour Non.{style.RESET}")

@@ -183,13 +183,13 @@ def fourth_model_qrcode(bordered, radius, withID, beginID, poweredBy, qrcode_ima
         plan.paste(withID_frame, withID_position)
 
     else:
-        logo_frame_size = (248, 360)
+        logo_frame_size = (248 // 2, 360 // 2)
         logo_frame = Image.new(mode="RGB", size=logo_frame_size, color=(255, 255, 255))
         logo_with_padding = ImageOps.contain(logo, logo_frame_size)
         logo_position_in_frame = ((logo_frame.width - logo_with_padding.width) // 2, (logo_frame.height - logo_with_padding.height) // 2)
         logo_frame.paste(logo_with_padding, logo_position_in_frame, logo_with_padding)
 
-        logo_position = (plan.width - logo_frame.width - 20, plan.height - logo_frame.height - 20)
+        logo_position = (plan.width - logo_frame.width - 10, plan.height - logo_frame.height - 10)
         plan.paste(logo_frame, logo_position)
 
     if bordered:
