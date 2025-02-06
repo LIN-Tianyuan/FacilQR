@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Form</title>
+</head>
+<body>
+<form action="/" method="post">
+    <label for="name">Entrez le nom du client :</label>
+    <input type="text" id="name" name="name" required>
+
+    <br>
+    <br>
+
+    <label for="name">Entrez la quantité de QR codes à générer :</label>
+    <input type="text" id="quantity" name="name" required>
+
+    <br>
+    <br>
+
+    <label for="name">Entrez le texte de copyright © (par exemple facildata)</label>
+    <input type="text" id="copyright" name="name" required>
+
+    <br>
+    <br>
+
+    <label>Choisissez le format de sortie :</label>
+    <input type="radio" id="png" name="format" value="png" checked>
+    <label for="png">PNG</label>
+    <input type="radio" id="jpeg" name="format" value="jpeg">
+    <label for="jpeg">JPEG</label>
+    <input type="radio" id="pdf" name="format" value="pdf">
+    <label for="pdf">PDF</label>
+
+    <br>
+    <br>
+
+    <label>Choisissez le modèle à utiliser :</label>
+    <input type="radio" id="classic" name="model" value="classic" checked>
+    <label for="classic">Modèle classic</label>
+    <input type="radio" id="vertical" name="model" value="vertical">
+    <label for="vertical">Modèle vertical (avec logo)</label>
+    <input type="radio" id="divide" name="model" value="divide">
+    <label for="divide">Modèle divisé en deux (avec logo)</label>
+    <input type="radio" id="half" name="model" value="half">
+    <label for="half"> Modèle divisé en deux moitié (avec logo)</label>
+
+    <br>
+    <br>
+
+    <label>Choisissez l'environnement d'hébergement :</label>
+    <input type="radio" id="prod" name="environment" value="1" checked>
+    <label for="prod">1. prod</label>
+    <input type="radio" id="preprod" name="environment" value="2">
+    <label for="preprod">2. pre-prod</label>
+    <input type="radio" id="re7" name="environment" value="3">
+    <label for="re7">3. re7</label>
+    <input type="radio" id="prodv2" name="environment" value="4">
+    <label for="prodv2"> 4. prod (V2)</label>
+    <input type="radio" id="preprodv2" name="environment" value="5">
+    <label for="preprodv2">5. pre-prod (V2)</label>
+    <input type="radio" id="re7v2" name="model" value="6">
+    <label for="re7v2"> 6. re7 (V2)</label>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
