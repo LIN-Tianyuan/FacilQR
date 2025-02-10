@@ -170,3 +170,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .idea
+node_modules
+facil_venv
